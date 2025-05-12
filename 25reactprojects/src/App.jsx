@@ -1,13 +1,16 @@
-import Acordion from "../components/acordion/Acordion"
-
+import Acordion from "../components/acordion/Acordion";
+import accordionData from "../components/acordion/data";
 
 function App() {
-
+  const data = accordionData.map(function (acordion) {
+    return <Acordion key={acordion.id} acordion={acordion} />;
+  });
   return (
     <>
-      <Acordion/>
+      <h3>I am an acordion</h3>
+      {data}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,31 +1,18 @@
 import { useState } from "react";
-import accordionData from "./data";
 
-export default function Acordion() {
-  console.log(accordionData);
 
-  const [ans, setAns] = useState("")
-
-  const data = accordionData.map(function (acordion) {
-    return (
-      <div key={acordion.id} onClick={showAns} >
-        {" "}
-        {acordion.question}
-        <div key={acordion.id}> {acordion.answer} </div>
-        <hr />
-      </div>
-    );
-  });
+export default function Acordion(props) {
+  const [ans, setAns] = useState(false)
 
   function showAns (){
-    console.log("clicked")
-    setAns(accordionData.answer)
+    setAns(prevAns => !prevAns)
   }
 
   return (
     <>
-      <h1>I am an acordion</h1>
-      {data}
+        <div onClick={showAns}> {props.acordion.question} </div>
+        { ans && <div> {props.acordion.answer} </div>}
+        <hr />
     </>
   );
 }
