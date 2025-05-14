@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {FaFolder} from "@react-icons/all-files/fa/FaFolder"
 
 export default function Colorflipper() {
   const [color, setColor] = useState("#242424");
@@ -27,7 +28,8 @@ export default function Colorflipper() {
   };
   return (
     <main style={styles}>
-      <h3>Hex color</h3>
+      <h3>Hex color  <FaFolder /> </h3>
+
       <div>{color} </div>
       <button onClick={handleColorChange}> Generate random color</button>
     </main>
