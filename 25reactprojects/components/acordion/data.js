@@ -23,7 +23,7 @@
   {
     id: '5',
     question: 'Can you explain the concept of state in React?',
-    answer: 'In React, state is a plain JavaScript object that is used to represent information that might change over time. Components use state to render dynamic output. When a component\'s state data changes, the component re-renders the UI.'
+    answer: 'In React, state is a plain JavaScript object that is used to represent information that might change over time. Components use state to render dynamic output. When a component's state data changes, the component re-renders the UI.'
   }
 ];
 
