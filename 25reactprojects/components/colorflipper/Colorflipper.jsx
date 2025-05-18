@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {FaFolder} from "@react-icons/all-files/fa/FaFolder"
+import {FaFolder} from "@react-icons/all-files/fa/FaFolder" // react icons npm downloaded
 
 export default function Colorflipper() {
   const [color, setColor] = useState("loght-blue");
