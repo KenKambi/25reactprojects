@@ -2,7 +2,7 @@ import { useState } from "react";
 import {FaFolder} from "@react-icons/all-files/fa/FaFolder" // react icons npm downloaded
 
 export default function Colorflipper() {
-  const [color, setColor] = useState("loght-blue");
+  const [color, setColor] = useState("light-blue");
 
   function randomGenerator(length) {
     return Math.floor(Math.random() * length);
