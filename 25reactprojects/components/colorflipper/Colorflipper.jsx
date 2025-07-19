@@ -19,7 +19,7 @@ export default function Colorflipper() {
 
     setColor(hash);
   }
-
+//css styles 
   const styles = {
     backgroundColor: color,
     height: "300px",
